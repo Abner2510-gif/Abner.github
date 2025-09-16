@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AbnerTech - Portfólio</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background: #f0f4f8;
+      color: #333;
+    }
+
+    header {
+      background: #1d3557;
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #457b9d;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 15px 20px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background: #1d3557;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 12px;
+    }
+
+    h2 {
+      color: #1d3557;
+      margin-bottom: 20px;
+    }
+
+    /* Skills */
+    .skill {
+      margin-bottom: 15px;
+    }
+
+    .skill-bar {
+      background: #a8dadc;
+      border-radius: 10px;
+      overflow: hidden;
+      height: 25px;
+    }
+
+    .skill-level {
+      height: 100%;
+      background: #1d3557;
+      text-align: right;
+      padding-right: 10px;
+      color: white;
+      line-height: 25px;
+      transition: 1s;
+    }
+
+    /* Projetos */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+
+    .project-card {
+      background: #f1faee;
+      padding: 15px;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    /* Formulário */
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    form button {
+      background: #457b9d;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    form button:hover {
+      background: #1d3557;
+    }
+
+    footer {
+      text-align: center;
+      background: #1d3557;
+      color: white;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    /* Responsividade */
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>AbnerTech</h1>
+    <p>Portfólio de TI e Desenvolvimento</p>
+  </header>
+
+  <nav>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projetos</a>
+    <a href="#contact">Contato</a>
+  </nav>
+
+  <section id="skills">
+    <h2>Minhas Habilidades</h2>
+    <div class="skill">
+      <p>Suporte Técnico</p>
+      <div class="skill-bar"><div class="skill-level" style="width:90%">90%</div></div>
+    </div>
+    <div class="skill">
+      <p>Redes de Computadores</p>
+      <div class="skill-bar"><div class="skill-level" style="width:80%">80%</div></div>
+    </div>
+    <div class="skill">
+      <p>Python</p>
+      <div class="skill-bar"><div class="skill-level" style="width:70%">70%</div></div>
+    </div>
+    <div class="skill">
+      <p>HTML/CSS</p>
+      <div class="skill-bar"><div class="skill-level" style="width:85%">85%</div></div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projetos</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Sistema de Cadastro</h3>
+        <p>Gerenciamento de clientes e produtos em Python, com interface simples e funcional.</p>
+      </div>
+      <div class="project-card">
+        <h3>Site WordPress</h3>
+        <p>Site modelo para pequenas empresas com Home, Sobre e Contato.</p>
+      </div>
+      <div class="project-card">
+        <h3>Automação de Arquivos</h3>
+        <p>Script em Python para organizar documentos e imagens automaticamente.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contato</h2>
+    <form>
+      <input type="text" placeholder="Seu nome">
+      <input type="email" placeholder="Seu e-mail">
+      <textarea rows="4" placeholder="Mensagem"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 AbnerTech</p>
+  </footer>
+
+</body>
+</html>
